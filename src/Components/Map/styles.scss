@@ -1,0 +1,62 @@
+.map {
+  height: 100%;
+}
+
+.custom-marker-icon {
+  border-radius: 50%;
+  background-image: url("https://map-test.scandinaviatech.com/assets/genericCarMarker.png");
+  transform: rotate(90deg);
+
+  &.red {
+    background-color: #d32f2f;
+
+    .additional-arrow {
+      color: #d32f2f;
+    }
+    .ping-animation{
+      background-color: #d32f2f;
+    }
+  }
+
+  &.green {
+    background-color: #2e7d32;
+
+    .additional-arrow {
+      color: #2e7d32;
+    }
+    .ping-animation{
+      background-color: #2e7d32;
+    }
+  }
+
+  &.orange {
+    background-color: #ed6c02;
+
+    .additional-arrow {
+      color: #ed6c02;
+    }
+    .ping-animation{
+      background-color: #ed6c02;
+    }
+  }
+
+  &.black {
+    background-color: #0F0F0F;
+
+    .additional-arrow {
+      color: #0F0F0F;
+    }
+    .ping-animation{
+      background-color: #0F0F0F;
+    }
+  }
+
+
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
